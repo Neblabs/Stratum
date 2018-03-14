@@ -14,7 +14,7 @@ use Stratum\Original\HTTP\Response\JSON;
 use Stratum\Original\HTTP\Response\Redirection;
 use Stratum\Original\HTTP\Response\Text;
 use Stratum\Original\HTTP\Router;
-use Stratum\original\HTTP\Registrator\FiltersRegistrator;
+use Stratum\Original\HTTP\Registrator\FiltersRegistrator;
 
 require_once 'Bootstrap.php';
 

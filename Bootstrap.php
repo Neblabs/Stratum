@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) define('ABSPATH', str_replace('wp-content/themes/Corebo
 require 'vendor/autoload.php';
 
 require_once STRATUM_ROOT_DIRECTORY . '/Original/Utilities/Compatibilty/CompatibleComponents.php';
-require_once STRATUM_ROOT_DIRECTORY . '/Original/Autoloader/autoloader.php';
+require_once STRATUM_ROOT_DIRECTORY . '/Original/Autoloader/Autoloader.php';
 
 Autoloader::register();
 
@@ -28,6 +28,13 @@ register_shutdown_function(function(){
 });
 
 
+#to do: move it out
+set_error_handler(function($er, $e){
+    (boolean) $fileCouldNotBeWritten = strpos($e, 'failed to open') !== false;
 
+    if ($fileCouldNotBeWritten) {
+        exit('Stratum requires your WordPress root directory and the subdirectories to be writable.');
+    }
+}, E_WARNING);
 
 
