@@ -1,5 +1,29 @@
 {
+    "name": "Neblabs/Stratum",
+    "type": "framework",
+    "description": "A modern framework with support for WordPress",
+    "keywords": [
+        "framework",
+        "wordpress",
+        "mvc",
+        "templating engine"
+    ],
+    "homepage": "https://neblabs.com/stratum",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafa Serna",
+            "email": "rafa@neblabs.com",
+            "homepage": "http://neblabs.com",
+            "role": "Programmer"
+        }
+    ],
     "require": {
+        "php": "^5.3.3 || ^7.0",
+        "another-vendor/package": "1.*"
+    },
+    "require": {
+        "php": ">=5.4",
         "doctrine/inflector": "1.1.0",
         "symfony/http-foundation": "^3.1",
         "symfony/console": "^3.1",
