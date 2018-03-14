@@ -1,0 +1,9 @@
+{
+    "require": {
+        "doctrine/inflector": "1.1.0",
+        "symfony/http-foundation": "^3.1",
+        "symfony/console": "^3.1",
+        "symfony/finder": "^3.1",
+        "paragonie/random_compat": "^2.0"
+    }
+}

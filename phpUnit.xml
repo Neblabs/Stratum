@@ -1,0 +1,21 @@
+<phpunit bootstrap="Original/Stratum/PHPUnitBootstrap.php" colors="true" beStrictAboutOutputDuringTests="false" >
+
+	<testsuites>
+		<testsuite name="Stratum">
+			<directory>Original/Tests</directory>
+		</testsuite>
+ 	</testsuites>
+
+ 	<testsuites>
+	    <testsuite name="Custom">
+	      <directory>Design/Test</directory>
+	    </testsuite>
+  	</testsuites>
+
+  	<testsuites>
+	    <testsuite name="Extend">
+	      <directory>Extend/Tests</directory>
+	    </testsuite>
+  	</testsuites>
+
+</phpunit>
