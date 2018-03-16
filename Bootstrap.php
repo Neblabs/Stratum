@@ -30,7 +30,7 @@ register_shutdown_function(function(){
 
 #to do: move it out
 set_error_handler(function($er, $e){
-    (boolean) $fileCouldNotBeWritten = strpos($e, 'failed to open') !== false;
+    (boolean) $fileCouldNotBeWritten = strpos(strtolower($e), 'permission denied') !== false;
 
     if ($fileCouldNotBeWritten) {
         exit('Stratum requires your WordPress root directory and the subdirectories to be writable.');
